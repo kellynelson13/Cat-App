@@ -252,19 +252,19 @@ getBreedsLoop();
 //   console.log(breed);
 //   //return breed !== "ebur";
 // });
-// let breedsWithImgs = breeds.filter(breed => {
-//     if(breed !== 'ebur' && breed !== 'mala'){
-//         return true
-//      }
-//      return false
-// })
+let breedsWithImgs = breedId.filter(breed => {
+    if(breed !== 'ebur' && breed !== 'mala'){
+        return true
+     }
+     return false
+})
 // for (let i = 0; i < breeds.length; i++){
 //     // if(breeds[i] !== 'ebur' && breeds[i] !== 'mala'){
 //     //     breedsWithImgs.push(breeds[i]);
 //     // }
 //     console.log(breeds[i])
 // }
-// console.log(breedsWithImgs);
+console.log(breedsWithImgs);
 
 // function getBreedTemp (breedsArr) {
 //     console.log(breedsArr)

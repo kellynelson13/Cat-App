@@ -223,58 +223,46 @@ let noImgBreed = ["ebur", "mala"];
 //////////////
 ///functions//
 /////////////
-function getBreedsLoop() {
-  $.ajax("https://api.thecatapi.com/v1/breeds").then(
-    function (data) {
-      for (let i = 0; i < data.length; i++) {
-        breedId.push(data[i].id);
-        names.push(data[i].name);
-        if (data[i].image) {
-          breedImg.push(data[i].image.url);
-        } else {
-          noImgBreed.push(data[i].id);
-        }
-      }
-    },
-    function (error) {
-      console.log("There seems to be an error");
-    }
-  );
-}
-getBreedsLoop();
+// function getBreedsLoop() {
+//   $.ajax("https://api.thecatapi.com/v1/breeds").then(
+//     function (data) {
+//       for (let i = 0; i < data.length; i++) {
+//         breedId.push(data[i].id);
+//         names.push(data[i].name);
+//         if (data[i].image) {
+//           breedImg.push(data[i].image.url);
+//         } else {
+//           noImgBreed.push(data[i].id);
+//         }
+//       }
+//     },
+//     function (error) {
+//       console.log("There seems to be an error");
+//     }
+//   );
+// }
+// getBreedsLoop();
 // console.log(breedId);
-// console.log(breedImg);
+ console.log(breedImg);
 // console.log(noImgBreed);
 // console.log(names);
 //console.log(breeds);
 
-// let breedsWithImgs = names.filter((breed) => {
-//   console.log(breed);
-//   //return breed !== "ebur";
-// });
+
 let breedsWithImgs = breedId.filter(breed => {
     if(breed !== 'ebur' && breed !== 'mala'){
         return true
      }
      return false
 })
-// for (let i = 0; i < breeds.length; i++){
-//     // if(breeds[i] !== 'ebur' && breeds[i] !== 'mala'){
-//     //     breedsWithImgs.push(breeds[i]);
-//     // }
-//     console.log(breeds[i])
-// }
+let namesWithImgs = names.filter(breed => {
+    if(breed !== 'European Burmese' && breed !== "Malayan"){
+        return true
+     }
+     return false
+})
+
 console.log(breedsWithImgs);
+console.log(namesWithImgs)
 
-// function getBreedTemp (breedsArr) {
-//     console.log(breedsArr)
-//     for(let i=0; i < breedsArr.length; i++){
-//         console.log(breedsArr[i])
-//         //console.log($.ajax(`https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=${breedsArr[i]}&api_key=live_epowJR24KRya1wP4HjDTsXaJiMVsfCsQK2inym40C9UBLHRtj0IUO3XEjqSQJTnm`))
-//         //.then( function(data){
-//             //console.log(data);
-//         //})
-//     }
 
-// }
-// getBreedTemp(breeds);

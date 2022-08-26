@@ -1,16 +1,46 @@
+//Make a call to the api and render the breed, img, description, and temperament
+//The description and temerapemnt should only be rendered after someone clicks the modal to get more info
+//IF the breed has a picture, render it's info
 ////////////////
 ////Variables///
 ////////////////
-const $button = $('button');
-const $picture = $('#picture');
-const $name = $('#name');
-const $temp = $('#temp');
-const $description = $('#description');
+const catButton = document.getElementById('catBtn');
+const breed = document.getElementById('breed');
+const picture = document.getElementById('picture');
+const openBtn = document.getElementById('open');
+const modalContainer = document.getElementById('modal-container');
+const modal = document.getElementById('modal');
+const temp = document.getElementById('temp');
+const description = document.getElementById('description');
+const closeBtn = document.getElementById('close');
 
+//////////////
+//Click Events
+/////////////
+catButton.addEventListener('click', handleKittyBtn);
+openBtn.addEventListener('click', handleOpenModal);
+closeBtn.addEventListener('click', handleCloseModal);
 
+////////////
+//Functions
+///////////
 
+function handleKittyBtn (e){
+    e.preventDefault();
+    $.ajax("https://api.thecatapi.com/v1/breeds?api_key=live_epowJR24KRya1wP4HjDTsXaJiMVsfCsQK2inym40C9UBLHRtj0IUO3XEjqSQJTnm")
+        .then(function(data){
+            console.log(data)
+        })
+}
 
+function handleOpenModal (){
 
+}
+function handleCloseModal (){
+
+}
+
+//console.log($.ajax("https://api.thecatapi.com/v1/breeds"));
 
 
 
@@ -38,7 +68,7 @@ const $description = $('#description');
 // // console.log($.ajax('https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=manx&api_key=live_epowJR24KRya1wP4HjDTsXaJiMVsfCsQK2inym40C9UBLHRtj0IUO3XEjqSQJTnm'))
 // // console.log($.ajax('https://api.thecatapi.com/v1/images/search?limit=3&api_key=REPLACE_ME'))
 
-// console.log($.ajax("https://api.thecatapi.com/v1/breeds"));
+
 // ///////////////////
 // ///Global Variables
 // //////////////////

@@ -27,9 +27,14 @@ closeBtn.addEventListener('click', handleCloseModal);
 
 function handleKittyBtn (e){
     e.preventDefault();
-    $.ajax("https://api.thecatapi.com/v1/breeds?api_key=live_epowJR24KRya1wP4HjDTsXaJiMVsfCsQK2inym40C9UBLHRtj0IUO3XEjqSQJTnm")
+    $.ajax("https://api.thecatapi.com/v1/breeds")
         .then(function(data){
-            console.log(data)
+            const randomIndex = Math.floor(Math.random() * data.length);
+            breed.innerHTML = data[randomIndex].name;
+            picture.innerHTML = `<img src=${data[randomIndex].image.url} >`
+            console.log(breed);
+            console.log(data);
+
         })
 }
 

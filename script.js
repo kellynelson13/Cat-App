@@ -1,4 +1,11 @@
-
+////////////////
+////Variables///
+////////////////
+const $button = $('button');
+const $picture = $('#picture');
+const $name = $('#name');
+const $temp = $('#temp');
+const $description = $('#description');
 
 
 

@@ -13,6 +13,7 @@ const modal = document.getElementById('modal');
 const temp = document.getElementById('temp');
 const description = document.getElementById('description');
 const closeBtn = document.getElementById('close');
+const openBtnDiv = document.getElementById('openBtnDiv');
 
 //////////////
 //Click Events

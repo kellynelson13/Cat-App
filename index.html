@@ -12,6 +12,12 @@
       defer
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -19,19 +25,19 @@
       <h1>Super Cats Cat Show</h1>
     </header>
     <main>
-        <div id="catBtn">
-          <button>Kitty Please!</button>
+      <div id="catBtn">
+        <button>Kitty Please!</button>
+      </div>
+      <h2 id="breed"></h2>
+      <div id="picture"></div>
+      <button id="open">Click for more kitty info</button>
+      <div id="modal-container" class="modal-container">
+        <div id="modal">
+          <h4 id="temp"></h4>
+          <p id="description"></p>
+          <button id="close">Close</button>
         </div>
-        <h2 id="breed"></h2>
-        <div id="picture"></div>
-        <button id="open">Click for more kitty info</button>
-        <div id="modal-container" class="modal-container">
-            <div id="modal">
-              <h4 id="temp"></h4>
-              <p id="description"></p>
-              <button id="close">Close</button>
-            </div>
-        </div>
+      </div>
     </main>
   </body>
 </html>

@@ -5,12 +5,33 @@
 body {
     background-color: aqua;
     margin: 0;
-    font-family: Helvetica;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
+    
+}
+h1 {
+    text-align: center;
+}
+#catBtn {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#openBtnDiv {
+    text-align: center;
 }
 
 img {
     width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 .modal-container {
     background-color: rgb(232, 239, 242);

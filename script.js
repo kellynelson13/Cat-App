@@ -33,6 +33,7 @@ function handleKittyBtn (e){
             const randomIndex = Math.floor(Math.random() * data.length);
             breed.innerHTML = data[randomIndex].name;
             picture.innerHTML = `<img src=${data[randomIndex].image.url} >`;
+            openBtnDiv.innerHTML = '<button id="open">Click for more kitty info</button>'
             temp.textContent = data[randomIndex].temperament;
             description.textContent = data[randomIndex].description;
             console.log(data);

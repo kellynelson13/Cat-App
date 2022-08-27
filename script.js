@@ -34,17 +34,19 @@ function handleKittyBtn (e){
             picture.innerHTML = `<img src=${data[randomIndex].image.url} >`;
             temp.textContent = data[randomIndex].temperament;
             description.textContent = data[randomIndex].description;
-            
             console.log(data);
-
+            openBtn.addEventListener('click', handleOpenModal)
+            closeBtn.addEventListener('click', handleCloseModal)
+        }, function (error){
+            console.log('Something went terribly wrong');
         })
 }
 
 function handleOpenModal (){
-
+    modalContainer.classList.add('show');
 }
 function handleCloseModal (){
-
+    modalContainer.classList.remove('show');
 }
 
 //console.log($.ajax("https://api.thecatapi.com/v1/breeds"));

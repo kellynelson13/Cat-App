@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: aqua;
+    background-color: rgb(234, 243, 243);
     margin: 0;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
@@ -22,10 +22,21 @@ h2 {
 
 #openBtnDiv {
     text-align: center;
+    margin: 60px 50px;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    box-shadow: 3px 4px #a5a5a5;
+    background-color: rgb(91, 218, 175);
+}
+button:hover {
+    background-color: rgb(32, 194, 140);
 }
 
 img {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -69,4 +80,10 @@ img {
 }
 #close {
     margin-bottom: 20px;
+}
+footer {
+    background-color: black;
+    opacity: 0;
+    height: 40px;
+
 }

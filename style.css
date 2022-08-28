@@ -116,4 +116,7 @@ footer {
     #box {
         height: 120px;
     }
+    h1 {
+        font-size: 25px;
+    }
 }

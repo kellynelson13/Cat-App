@@ -99,5 +99,21 @@ footer {
     background-color: black;
     opacity: 0;
     height: 40px;
+}
 
+@media only screen and (max-width: 768px){
+    img {
+        width: 65%;
+    }
+    .modal-container {
+        width: 100%;
+        height: 100%;
+    }
+    #modal {
+        width: 80%;
+        height: 80%;
+    }
+    #box {
+        height: 120px;
+    }
 }

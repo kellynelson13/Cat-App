@@ -3,10 +3,22 @@
 }
 
 body {
-    background-color: rgb(234, 243, 243);
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgb(173, 210, 210), rgb(122, 190, 190), white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
+    height: 100vh;   
+}
+#box {
+    box-shadow: -25px 10px 17px rgba(0, 0, 0, 0.639);
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(173, 210, 210);
     
 }
 h1 {
@@ -15,6 +27,7 @@ h1 {
 }
 #catBtn {
     text-align: center;
+    margin-top: 30px;
 }
 
 h2 {

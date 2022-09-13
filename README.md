@@ -20,4 +20,4 @@ Once you click the button for more kitty info:
 ![modal of more kitty info](pictures-for-readme/Screen%20Shot%202022-08-27%20at%207.54.31%20PM.png)
 
 ## Getting Started:
-Click [here](https://kellynelson13.github.io/cat-app/) to view the app!
+Click [here](https://kellynelson13.github.io/Cat-App/) to view the app!
